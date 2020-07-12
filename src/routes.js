@@ -1,7 +1,8 @@
-const express = require('express')
+const express = require('express');
+const ProductController = require('./controllers/ProductController');
 
-const routes = express.Router();
+const routes = express.Router;
 
-routes.get('/', (req, res) => { res.send('alo galera do zap') });
+routes.get('/products', ProductController);
 
 module.exports = routes;
